@@ -97,10 +97,73 @@ public class JavaApplication33 {
        
         
         
-        
-        
-        
+// crea un programa que demane dues cadenes de text per teclat i despres indique
+// si son iguales , a mes de sin son iguales sense diferenciar entre majuscules i miniscules
+//        
+//        Scanner reader = new Scanner(System.in);
+//        System.out.println("dame la primera frase");
+//        String s1 = reader.nextLine();
+//        System.out.println("dame la segunda frase");
+//        String s2 = reader.nextLine();
+//        System.out.println("haber si son eguales ?");
+//        System.out.println(s1.equals(s2));
+//
+//        System.out.println("comprebemos si son eguales, ahora sin contar las mayusculas");
+//        System.out.println(s1.equalsIgnoreCase(s2));
+
     
+    //crea un programa que demana dues cadenes de text : nom i congnoms. despres mostrara un codi
+    // d'usuari (en majuscules) format per la contenacio de les tres primers lletres de cadascun d'ells.
+    
+//        Scanner reader = new Scanner(System.in);
+//        System.out.println("dame tu nombre");
+//        String s1 = reader.nextLine();
+//        System.out.println("dame tu apellido");
+//        String s2 = reader.nextLine();
+//        System.out.println("Dame tu segudo appelido");
+//        String s3 = reader.nextLine();
+//
+//        System.out.println(s1.toUpperCase().substring(0, 3) + (s2.toUpperCase().substring(0, 3)) + s3.toUpperCase().substring(0, 3));
+//    
+    
+        Scanner reader = new Scanner(System.in);
+        System.out.println("dame en phrase");
+        String s1 = reader.nextLine();
+
+        int na = 0, ne = 0, ni = 0, no = 0, nu = 0;
+
+        for (int i = 0; i < s1.length(); i++) {
+            switch (s1.toLowerCase().charAt(i)) {
+
+                case 'a':
+                    na++;
+                    break;
+
+                case 'e':
+                    ne++;
+                    break;
+
+                case 'i':
+                    ni++;
+                    break;
+
+                case 'o':
+                    no++;
+                    break;
+
+                case 'u':
+                    nu++;
+                    break;
+            }
+
+        }
+        System.out.println("Num de A es " + na);
+        System.out.println("Num de E es " + ne);
+        System.out.println("Num de I es " + ni);
+        System.out.println("Num de O es " + no);
+        System.out.println("Num de U es " + nu);
+
+  
     
     
     
